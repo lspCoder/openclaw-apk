@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">OpenClaw APK</string>
+    <string name="app_tagline">Mobile AI Assistant Launcher</string>
+
+    <!-- Status -->
+    <string name="status_checking">Checking status…</string>
+    <string name="status_checking_description">Please wait while we check your installation</string>
+    <string name="status_termux_required">Termux Required</string>
+    <string name="status_termux_description">OpenClaw needs Termux to run. Install it from F-Droid.</string>
+    <string name="status_setup_needed">Setup Required</string>
+    <string name="status_setup_description">OpenClaw is not installed yet. Tap to set it up.</string>
+    <string name="status_incomplete">Installation Incomplete</string>
+    <string name="status_incomplete_description">Some components are missing. Please complete the setup.</string>
+    <string name="status_ready">Ready to Launch</string>
+    <string name="status_ready_description">OpenClaw is installed and ready to use!</string>
+    <string name="status_error">Error</string>
+    <string name="status_error_description">Something went wrong. Please try again.</string>
+    <string name="status_updating">Updating…</string>
+    <string name="status_updating_description">Please wait while we update OpenClaw.</string>
+
+    <!-- Buttons -->
+    <string name="btn_setup">Set Up OpenClaw</string>
+    <string name="btn_install_termux">Install Termux</string>
+    <string name="btn_install_termux_first">Install Termux First</string>
+    <string name="btn_launch">Launch OpenClaw</string>
+    <string name="btn_help">Help</string>
+    <string name="btn_start_install">Start Installation</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_update">Update OpenClaw</string>
+    <string name="btn_copy_script">Copy Script</string>
+    <string name="btn_open_termux">Open Termux</string>
+    <string name="btn_ok">OK</string>
+    <string name="btn_yes">Yes</string>
+    <string name="btn_no">No</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_reset">Reset</string>
+    <string name="btn_done">Done</string>
+    <string name="btn_retry">Retry</string>
+    <string name="btn_more_info">More Info</string>
+    <string name="btn_complete_setup">Complete Setup</string>
+
+    <!-- Setup Activity -->
+    <string name="title_setup">Setup OpenClaw</string>
+    <string name="setup_title">Install OpenClaw on Termux</string>
+    <string name="setup_description">This will guide you through installing OpenClaw on your Termux environment. Make sure Termux is installed first.</string>
+    <string name="install_steps_title">Installation Steps</string>
+    <string name="install_steps_description">The following steps will be performed automatically:</string>
+    <string name="script_title">Installation Script</string>
+    <string name="step_update_packages">Update Termux packages</string>
+    <string name="step_update_packages_desc">pkg update &amp;&amp; pkg upgrade</string>
+    <string name="step_install_deps">Install Python, Git, Node.js</string>
+    <string name="step_install_deps_desc">Python, pip, git, nodejs, npm</string>
+    <string name="step_clone_repo">Clone OpenClaw repository</string>
+    <string name="step_clone_repo_desc">git clone https://github.com/openclaw/openclaw.git</string>
+    <string name="step_install_npm">Install npm dependencies</string>
+    <string name="step_install_npm_desc">npm install in OpenClaw directory</string>
+    <string name="step_setup_voice">Setup HAL voice synthesis</string>
+    <string name="step_setup_voice_desc">Configure HAL 9000 voice output</string>
+    <string name="step_complete">Installation complete!</string>
+    <string name="step_complete_desc">OpenClaw is ready to use</string>
+
+    <!-- Help Activity -->
+    <string name="title_help">Help &amp; Resources</string>
+    <string name="help_title">Getting Help</string>
+    <string name="help_description">Here are some useful resources for OpenClaw and Termux.</string>
+    <string name="help_termux_title">Termux Wiki</string>
+    <string name="help_termux_desc">Learn how to use Termux effectively</string>
+    <string name="help_docs_title">OpenClaw Documentation</string>
+    <string name="help_docs_desc">Official OpenClaw documentation</string>
+    <string name="help_github_title">GitHub Repository</string>
+    <string name="help_github_desc">OpenClaw source code and issues</string>
+    <string name="help_discord_title">Discord Community</string>
+    <string name="help_discord_desc">Join the OpenClaw community</string>
+
+    <!-- Settings Activity -->
+    <string name="title_settings">Settings</string>
+    <string name="setting_install_path">Installation Path</string>
+    <string name="hint_install_path">e.g., ~/.openclaw</string>
+    <string name="setting_clone_url">Repository URL</string>
+    <string name="hint_clone_url">https://github.com/openclaw/openclaw.git</string>
+    <string name="setting_options">Options</string>
+    <string name="setting_auto_start">Auto-start on launch</string>
+    <string name="setting_setup_voice">Setup HAL voice</string>
+
+    <!-- Dialogs -->
+    <string name="dialog_error_title">Error</string>
+    <string name="dialog_warning_title">Warning</string>
+    <string name="dialog_launch_title">Launching OpenClaw</string>
+    <string name="dialog_launch_message">OpenClaw will open in Termux. Make sure Termux is installed and the installation is complete.</string>
+    <string name="dialog_termux_title">Install Termux</string>
+    <string name="dialog_termux_message">OpenClaw requires Termux to run. Termux is a terminal emulator for Android that provides a Linux environment.\n\nPlease install Termux from F-Droid (recommended) or the Google Play Store.</string>
+    <string name="dialog_install_title">Install OpenClaw</string>
+    <string name="dialog_install_message">The installation script will run in Termux. This may take a few minutes. Continue?</string>
+    <string name="dialog_cancel_title">Cancel Installation?</string>
+    <string name="dialog_cancel_message">Are you sure you want to cancel the installation?</string>
+    <string name="dialog_complete_title">Installation Complete!</string>
+    <string name="dialog_complete_message">OpenClaw has been installed successfully. You can now launch it from the main screen.</string>
+    <string name="dialog_reset_title">Reset Settings?</string>
+    <string name="dialog_reset_message">This will reset all settings to default. Continue?</string>
+
+    <!-- Toast Messages -->
+    <string name="toast_script_copied">Installation script copied to clipboard</string>
+    <string name="toast_run_script">Please run the copied script in Termux</string>
+    <string name="toast_copy_script_first">Please copy the script first</string>
+    <string name="toast_opening_f_droid">Opening F-Droid…</string>
+    <string name="toast_open_browser_manually">Could not open browser. Please visit f-droid.org manually.</string>
+    <string name="toast_refreshing">Refreshing status…</string>
+    <string name="toast_settings_saved">Settings saved</string>
+    <string name="toast_settings_reset">Settings reset to default</string>
+    <string name="toast_network_unavailable">No internet connection</string>
+    <string name="toast_termux_not_responding">Termux is not responding</string>
+    <string name="toast_installation_failed">Installation failed. Please try again.</string>
+    <string name="toast_update_complete">OpenClaw updated successfully</string>
+    <string name="toast_update_failed">Update failed. Please try again.</string>
+
+    <!-- Error Messages -->
+    <string name="error_generic">Something went wrong. Please try again.</string>
+    <string name="error_termux_not_found">Could not find Termux. Please install it from F-Droid.</string>
+    <string name="error_termux_not_responding">Termux is not responding. Please try again.</string>
+    <string name="error_network">No internet connection. Please check your network.</string>
+    <string name="error_download_failed">Download failed. Please try again.</string>
+    <string name="error_installation_failed">Installation failed. Please check the error message and try again.</string>
+    <string name="error_permission_denied">Permission denied. Please check app permissions.</string>
+    <string name="error_storage_full">Not enough storage space. Please free up space and try again.</string>
+    <string name="error_timeout">Operation timed out. Please try again.</string>
+    <string name="error_code">Error code: %1$s</string>
+    <string name="suggestion">Suggestion: %1$s</string>
+
+    <!-- Accessibility -->
+    <string name="cd_logo">OpenClaw logo</string>
+    <string name="cd_status_icon">Status icon</string>
+    <string name="cd_termux">Termux wiki</string>
+    <string name="cd_docs">Documentation</string>
+    <string name="cd_github">GitHub repository</string>
+    <string name="cd_discord">Discord community</string>
+    <string name="cd_open_link">Open link</string>
+    <string name="cd_progress">Installation progress</string>
+    <string name="cd_status_card">Installation status card</string>
+    <string name="cd_install_button">Install or update OpenClaw button</string>
+    <string name="cd_launch_button">Launch OpenClaw button</string>
+    <string name="cd_help_button">Help button</string>
+
+    <!-- URLs -->
+    <string name="url_termux_wiki">https://wiki.termux.com</string>
+    <string name="url_openclaw_docs">https://docs.openclaw.ai</string>
+    <string name="url_github">https://github.com/openclaw/openclaw</string>
+    <string name="url_discord">https://discord.com/invite/clawd</string>
+
+    <!-- Content Descriptions -->
+    <string name="cd_logo">OpenClaw logo</string>
+    <string name="cd_status_icon">Status icon</string>
+    <string name="cd_termux">Termux wiki</string>
+    <string name="cd_docs">Documentation</string>
+    <string name="cd_github">GitHub repository</string>
+    <string name="cd_discord">Discord community</string>
+    <string name="cd_open_link">Open link</string>
+
+    <!-- Menu -->
+    <string name="menu_settings">Settings</string>
+    <string name="menu_refresh">Refresh</string>
+</resources>
