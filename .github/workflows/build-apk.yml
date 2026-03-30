@@ -39,11 +39,11 @@ jobs:
           api-level: 34
           build-tools: 34.0.0
 
-      - name: Build debug APK
-        run: |
-          cd projects/openclaw-apk
-          chmod +x gradlew
-          ./gradlew assembleDebug --no-daemon
+      # - name: Build debug APK
+      #   run: |
+      #     cd projects/openclaw-apk
+      #     chmod +x gradlew
+      #     ./gradlew assembleDebug --no-daemon
 
       - name: Build release APK
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
@@ -52,11 +52,11 @@ jobs:
           chmod +x gradlew
           ./gradlew assembleRelease --no-daemon
 
-      - name: Upload debug APK
-        uses: actions/upload-artifact@v4
-        with:
-          name: openclaw-apk-debug
-          path: projects/openclaw-apk/app/build/outputs/apk/debug/
+      # - name: Upload debug APK
+      #   uses: actions/upload-artifact@v4
+      #   with:
+      #     name: openclaw-apk-debug
+      #     path: projects/openclaw-apk/app/build/outputs/apk/debug/
 
       - name: Upload release APK
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
